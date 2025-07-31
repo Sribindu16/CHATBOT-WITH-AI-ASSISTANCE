@@ -1,0 +1,16 @@
+create database AIChatbot;
+use AIChatbot;
+
+create table register(username varchar(30) primary key,
+password varchar(30),
+contact varchar(12),
+email varchar(30),
+address varchar(40));
+
+create table faq(question varchar(350),
+answer varchar(350));
+
+insert into faq values('What is your working hours', 'We worked 9A.M to 6PM in all working days');
+insert into faq values('How can i contact or reach you people', 'You can use hour 24X7 Toll Free NO: 1800 049 1234 or email us xyz@xyz.com');
+insert into faq values('Where are you located or where is your office location', 'Our address is Gulmohar Apartment 303 3rd Floor, Hyderabad, Telangana, India');
+commit;
